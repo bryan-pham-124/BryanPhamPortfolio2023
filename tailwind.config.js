@@ -2,7 +2,16 @@
 module.exports = {
   content: [ "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+     
+    extend: {
+      colors: {
+        'customGreen': '#0f5e43'
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'courgette': ['Courgette', 'cursive']
+      },
+    },
   },
   plugins: []
 }
