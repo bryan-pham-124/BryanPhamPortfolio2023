@@ -2,7 +2,7 @@ import React from 'react'
 
 const H2 = ({text, color ='black', textAlign='left'}) => {
   return (
-    <h2 className={`font-medium  mb-8 text-${color} pb-5 text-6xl text-${textAlign} `}>{text}</h2>
+    <h2 className={`font-semibold text-${color} text-2xl md:text-4xl text-${textAlign} my-6`}>{text}</h2>
   )
 }
 

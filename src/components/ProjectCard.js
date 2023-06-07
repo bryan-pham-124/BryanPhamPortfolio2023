@@ -1,38 +1,45 @@
 import React from 'react'
-import H1 from './text/H1'
 import H2 from './text/H2'
 import H4 from './text/H4'
 import H3 from './text/H3'
+import HR from './HR'
+ 
 
-const ProjectCard = () => {
+
+
+
+const ProjectCard = ({theme, title, description, techUsed, screenshotLink}) => {
+
+ const bgColor = theme === 'dark' ? 'bg-customGreen' : 'bg-white';
+ const textColor = theme === 'dark' ? 'white' : 'black';
+
   return (
-    <section className='bg-white h-[100vh] flex items-center '>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center">
-            <div className="wrapper flex flex-col items-center">
-                <H2 text={'Project Title'}/>
-                <H4 text={'Description'} />
-                <H3 text={'Technologies Used'} />
-                <div className="wrapper flex gap-x-3">
-                    <H4 text={'Skill'} />
-                    <H4 text={'Skill 2'} />
-                    <H4 text={'Skill 3'} />
-                    <H4 text={'Skill 4'} />
-                    <H4 text={'Skill 5'} />
-                    <H4 text={'Skill 6'} />
+    <section className={`${bgColor} flex items-center py-20 border-black`}>
+        <div className="w-full grid grid-cols-1 items-center justify-items-center  lg:grid-cols-2 ">
+            <div className="wrapper flex flex-col items-center mb-14 lg:mb-0 px-12">
+                <H2 text={title}  color={textColor}  />
+                <div className="wrapper  w-full my-3">
+                    <HR color={textColor} marginY='3'/>
+                </div>
+                <H4 textAlign='left'  color={`${theme === 'dark' ? 'white' : 'black'}`}  text={description} />
+               
+                <H3  color={textColor}  text={"Technologies Used"} />
+                <div className={`wrapper grid grid-cols-2 lg:grid-cols-4 gap-x-3 items-center`}>
+        
+                    { techUsed.map(tech => <H4 textAlign='left'  color={textColor}  text={tech} /> )}
+                    
+                </div>
+                     
+                <div className="wrapper w-[13rem] mt-10">
+                    <button className={`w-full bg-customBlack text-white  py-5 transition   hover:bg-sky-500`}>
+                        Details
+                    </button>
                 </div>
             </div>
-            <div className="wrapper bg-customGreen text-white h-[50vh] flex items-center px-4">
-                PROJECT SCREENSHOT HERE
+            <div className={`wrapper text-black   flex items-center px-4  justify-center`}>
+                <img src={screenshotLink} className='max-w-full h-auto max-h-[30rem] border-customBlack border' alt={`${title} Screenshot`}/>
             </div>
-            
-            <div className="wrapper w-[13rem]">
-                <button className='w-full bg-customGreen py-5 text-white'>
-                    Details
-                </button>
-            </div>
-            
         </div>
-        
     </section>
   )
 }

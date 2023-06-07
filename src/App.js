@@ -4,6 +4,10 @@ import Splash from './components/Splash';
 import Skills from './components/Skills';
 import About from './components/About';
 import ProjectCard from './components/ProjectCard';
+import { designSkills, designTools, projects, techSkills, techTools } from './data';
+import Footer from './components/Footer';
+
+
 
 
 function App() {
@@ -25,13 +29,29 @@ function App() {
         />  
 
         <Skills
-           designSkills={['Wireframing', 'Prototyping', 'Presenting Applications', 'UI + UX ', 'Responsive Web Design']}
-           designTools={['Figma', 'Krita', 'Font Awesome', 'Microsoft Teams (Presentations)']}
-           techSkills={['React.js', 'HTML/CSS with Tailwind.CSS',  'TypeScript/JavaScript', 'Remix.js', 'Prisma', 'SQL', 'MongoDB']}
-           techTools={['Visual Studio', 'Github + Github Desktop', 'Chrome Developer Tools', 'Prisma Studio', 'NPM']}
+           designSkills={designSkills}
+           designTools={designTools}
+           techSkills={techSkills}
+           techTools={techTools}
         />
 
-        <ProjectCard />
+          
+        {
+          projects.map((project, i) =>(
+             <ProjectCard 
+                  key = {i}
+                  theme = { i % 2 == 1 ? 'dark': 'light'}
+                  title={project.title}
+                  description={project.description}
+                  techUsed={project.techUsed}
+                  screenshotLink={project.screenshotLink}
+             />
+
+          ))
+        }
+
+        <Footer />
+       
 
     </div>
   );

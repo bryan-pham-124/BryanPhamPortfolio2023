@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
         'courgette': ['Courgette', 'cursive']
-      },
+      }
     },
   },
   plugins: []
