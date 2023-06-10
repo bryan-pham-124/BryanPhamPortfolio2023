@@ -3,18 +3,18 @@ import H2 from './text/H2'
 import H4 from './text/H4'
 import H3 from './text/H3'
 import HR from './HR'
- 
+import { forwardRef } from 'react'
 
 
 
 
-const ProjectCard = ({theme, title, description, techUsed, screenshotLink}) => {
+const ProjectCard = forwardRef(({theme, title, description, techUsed, screenshotLink, cardNum}, ref) => {
 
  const bgColor = theme === 'dark' ? 'bg-customGreen' : 'bg-white';
  const textColor = theme === 'dark' ? 'white' : 'black';
 
   return (
-    <section className={`${bgColor} flex items-center py-20 border-black`}>
+    <section ref={ref} id={`projectCard${cardNum}`} className={`${bgColor} flex items-center py-20 border-black`}>
         <div className="w-full grid grid-cols-1 items-center justify-items-center  lg:grid-cols-2 ">
             <div className="wrapper flex flex-col items-center mb-14 lg:mb-0 px-12">
                 <H2 text={title}  color={textColor}  />
@@ -26,7 +26,7 @@ const ProjectCard = ({theme, title, description, techUsed, screenshotLink}) => {
                 <H3  color={textColor}  text={"Technologies Used"} />
                 <div className={`wrapper grid grid-cols-2 lg:grid-cols-4 gap-x-3 items-center`}>
         
-                    { techUsed.map(tech => <H4 textAlign='left'  color={textColor}  text={tech} /> )}
+                    { techUsed.map((tech, i) => <H4 key={i} textAlign='left'  color={textColor}  text={tech} /> )}
                     
                 </div>
                      
@@ -42,6 +42,6 @@ const ProjectCard = ({theme, title, description, techUsed, screenshotLink}) => {
         </div>
     </section>
   )
-}
+})
 
 export default ProjectCard
