@@ -40,3 +40,6 @@ export const projects = [
  
 
 ]
+
+
+export const animationValues = (currentVisible,  id)  =>  currentVisible ===  id ? 'animate-fadeIn': 'animate-fadeOut';

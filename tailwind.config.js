@@ -10,6 +10,21 @@ module.exports = {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
         'courgette': ['Courgette', 'cursive']
+      },
+
+      animation: {
+        'fadeIn': 'fadeIn 1s forwards',
+        'fadeOut': 'fadeOut 1s forwards',
+      },
+      keyframes: {
+         fadeIn: {
+            '0%': { opacity: 0 },
+            '100%': { opacity: 1 }
+         },
+         fadeOut: {
+            '0%': { opacity: 1 },
+            '100%': { opacity: 0 }
+         }
       }
     },
   },

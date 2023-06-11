@@ -5,15 +5,25 @@ import H3 from './text/H3'
 import H2 from './text/H2'
 import H4 from './text/H4'
 import HR from './HR'
+import { forwardRef } from 'react'
+import { animationValues } from '../data'
+
 
 
 const designTextColor = 'white';
 const frontEndColor = "white"
 
 
-const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
+// const About = forwardRef(({header, description, description2}, ref) => {
+
+const Skills = forwardRef(({designSkills, designTools, techSkills, techTools, currentVisible}, ref) => {
   return (
-    <section  id="skills"  className={`wrapper bg-white flex justify-center items-center `}>
+    <section  
+        ref={ref} 
+        id="skills" 
+        className={`wrapper bg-white flex justify-center items-center `
+        
+        }>
 
         <div className="wrapper flex flex-col  justify-center w-full md:flex-row md:w-full">
              
@@ -59,7 +69,6 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                 
             </div>
 
-                                
             <div className="wrapper bg-customBlack py-12 px-9 w-full min-w-[17rem]">
 
                 <div className='wrapper'>
@@ -97,12 +106,13 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                     </div>
                 </div>
 
+
             </div>
             
         </div>
 
     </section>
   )
-}
+})
 
 export default Skills
