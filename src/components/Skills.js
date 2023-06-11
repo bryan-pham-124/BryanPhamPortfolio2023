@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import H3 from './text/H3'
 import H2 from './text/H2'
-import H4 from './text/H4'
 import HR from './HR'
+import P from './text/P'
 
 
 const designTextColor = 'white';
@@ -35,7 +35,7 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                             <ul>
                                 {
                                     designSkills.map((skill, i ) => (
-                                            <li key ={i} className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={skill}/> </li>
+                                            <li key ={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={skill}/> </li>
                                     ))
                                 }
                             </ul>
@@ -48,7 +48,7 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                             <ul>
                                 {
                                     designTools.map((tool, i ) => (
-                                            <li key ={i} className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={tool}/> </li>
+                                            <li key ={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={tool}/> </li>
                                     ))
                                 }
                             </ul>
@@ -76,7 +76,7 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                             <ul>
                                 {
                                     techSkills.map((skill, i) => (
-                                            <li key={i} className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={skill}/> </li>
+                                            <li key={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={skill}/> </li>
                                     ))
                                 }
                             </ul>
@@ -89,7 +89,7 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                             <ul >
                                 {
                                     techTools.map((tool, i) => (
-                                            <li key = {i} className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={tool}/> </li>
+                                            <li key = {i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={tool}/> </li>
                                     ))
                                 }
                             </ul>

@@ -8,19 +8,15 @@ import { BrowserRouter as Router, Routes,
 
 import MainContent from './components/MainContent';
 
-import ProjectDetails from './components/ProjectDetails';
+import ProjectDetails from './components/project/ProjectDetails';
 
 function App() {
  
 
   return (
 
-    <div className="App font-montserrat m-0 bg-customGreen">
+    <div className="App font-montserrat m-0 ">
 
-        { 
-          // <MainContent />
-        }
-       
 
         <Router>
           <Routes>

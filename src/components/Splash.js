@@ -3,6 +3,7 @@ import H1 from './text/H1'
 import H3 from './text/H3'
 import HR from './HR'
 import { animationValues } from '../data'
+import BigP from './text/BigP'
 
 const Splash = forwardRef(({header, description, currentVisible, lastVisible}, ref) => {
 
@@ -15,7 +16,7 @@ const Splash = forwardRef(({header, description, currentVisible, lastVisible}, r
         <div className='wrapper w-[80vw] lg:w-[50vw]'>
             <H1 textAlign={'left'} text={header} color={'white'} marginY={10}/>
             <HR color ='white' marginY='20' />
-            <H3  textAlign='left' text={description} color={'white'} marginY={10}/>
+            <BigP textAlign='left' text={description} color={'white'} marginY={10}/>
         </div>
     </header>
   )

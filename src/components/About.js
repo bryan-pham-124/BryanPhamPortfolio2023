@@ -6,6 +6,7 @@ import H1 from './text/H1'
 import { forwardRef } from 'react';
 import { animationValues } from '../data'
 import HR from './HR'
+import BigP from './text/BigP'
 
 const About = forwardRef(({header, description, currentVisible}, ref) => {
 
@@ -20,7 +21,7 @@ const About = forwardRef(({header, description, currentVisible}, ref) => {
         <div className="wrapper w-[50vw]">
             <H1  textAlign='center'  text={header}/>
             <HR color='black'   />
-            <H3 textAlign='left' text={description}/>
+            <BigP textAlign='left' text={description}/>
         </div>
      </section>
   )

@@ -2,10 +2,10 @@ import '../App.css';
 import Splash from './Splash';
 import Skills from './Skills';
 import About from './About';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './project/ProjectCard';
 import { designSkills, designTools, techSkills, techTools, projects } from '../data';
 import Footer from './Footer';
-import ProjectsHeader from './ProjectHeader';
+import ProjectsHeader from './project/ProjectHeader';
 import { useRef, useState, useEffect } from 'react';
 
 import React from 'react'
@@ -86,6 +86,8 @@ const MainContent = () => {
     
 
         {
+
+      
           projects.map((project, i) =>(
             <ProjectCard 
                   key = {i}
