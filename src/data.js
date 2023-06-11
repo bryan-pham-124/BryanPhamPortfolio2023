@@ -63,22 +63,22 @@ export const projectDetails = [
             },
             {
                 header: 'Notable Features',
-                value: ['Form Input Validation', 'Account creation', 'Authentication', 'Authorization', 'Dynamic Rendering', 'Dynamic Database Fetching', 'Backend Data Validation']
+                value: ['Form Input Validation', 'Account creation', 'Authentication', 'Authorization', 'Dynamic Rendering', 'Dynamic Database Data Fetching', 'Backend Data Validation']
             },
             {
                 header: 'Links',
                 value: [
 
-                            <div className="wrapper my-4">
-                                <Link to="https://github.com/bryan-pham-124/DeveloperHelpSuite" className={linkStyles}> Github</Link>
-                            </div>  
-                            ,
+                    <div className="wrapper my-4">
+                        <Link to="https://github.com/bryan-pham-124/DeveloperHelpSuite" className={linkStyles}> Github</Link>
+                    </div>  
+                    ,
 
-                            <div className="wrapper my-4">
-                                <Link to="https://developer-help-suite.vercel.app/" className={linkStyles}> Live App </Link>
-                            </div>
+                    <div className="wrapper my-4">
+                        <Link to="https://developer-help-suite.vercel.app/" className={linkStyles}> Live App </Link>
+                    </div>
 
-                       ]
+                ]
             }
           
         ]
@@ -106,11 +106,11 @@ export const projectDetails = [
                 header: 'Links',
                 value: [
 
-                            <div className="wrapper my-4">
-                                <Link to="https://dividedwefall.org/" className={linkStyles}> Live App </Link>
-                            </div>
+                    <div className="wrapper my-4">
+                        <Link to="https://dividedwefall.org/" className={linkStyles}> Live App </Link>
+                    </div>
 
-                       ]
+                ]
             }
           
         ]
@@ -138,23 +138,22 @@ export const projectDetails = [
                 header: 'Links',
                 value: [
 
-                            <div className="wrapper my-4">
-                                <Link to="https://bryan-pham-124.github.io/ExcelsiorWebsitev2/" className={linkStyles}> Live App </Link>
-                            </div>
-                            
-                            ,
+                    <div className="wrapper my-4">
+                        <Link to="https://bryan-pham-124.github.io/ExcelsiorWebsitev2/" className={linkStyles}> Live App </Link>
+                    </div>
+                    
+                    ,
 
-                            <div className="wrapper my-4">
-                                <Link to="https://github.com/bryan-pham-124/ExcelsiorWebsitev2" className={linkStyles}> Github</Link>
-                            </div>  
+                    <div className="wrapper my-4">
+                        <Link to="https://github.com/bryan-pham-124/ExcelsiorWebsitev2" className={linkStyles}> Github</Link>
+                    </div>  
 
-                       ]
+                ]
             }
           
         ]
         
     },
-
 
 
     {
@@ -177,27 +176,160 @@ export const projectDetails = [
                 header: 'Links',
                 value: [
 
-                            <div className="wrapper my-4">
-                                <Link to="https://bryan-pham-124.github.io/BudgetDashboard/" className={linkStyles}> Live App </Link>
-                            </div>
-                            
-                            ,
+                    <div className="wrapper my-4">
+                        <Link to="https://bryan-pham-124.github.io/BudgetDashboard/" className={linkStyles}> Live App </Link>
+                    </div>
+                    
+                    ,
 
-                            <div className="wrapper my-4">
-                                <Link to="https://github.com/bryan-pham-124/BudgetDashboard" className={linkStyles}> Github</Link>
-                            </div>  
+                    <div className="wrapper my-4">
+                        <Link to="https://github.com/bryan-pham-124/BudgetDashboard" className={linkStyles}> Github</Link>
+                    </div>  
 
-                       ]
+                ]
             }
           
         ]
         
     },
 
-
-
-    
 ]
 
+
+
+export const features = [
+    {
+        title: 'Registering Login and Logout',
+        link: 'https://www.youtube.com/embed/XX7pgBHJkMQ',
+        details:  [
+            {
+                subtitle:'Dynamic inline form validation.',
+                description: 'Users can only submit a form once all fields are valid.'
+            },
+            {
+                subtitle:'Register',
+                description: 'Allows if a user to register with an email that is not in the database and notifies the user when the email they try to register with has been taken.'
+            },
+            {
+                subtitle:'Logout',
+                description: 'Logs user out if they are logged in.'
+            },
+            {
+                subtitle:'Dynamic inline form validation',
+                description: 'Allows users to login if they provide valid credentials and tells users if they do not have any valid credentials.'
+            },
+
+        ]
+    },
+
+    {
+        title:'Filtering and Sorting',
+        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
+        details:  [
+            {
+                subtitle:'Sorting',
+                description: 'Questions can be sorted by votes or priority (low, medium, urgent).'
+            },
+            {
+                subtitle:'Filtering',
+                description: 'Questions can be filtered by status, category and priority.'
+            },
+            {
+                subtitle:'Reset Sorts and Filters',
+                description: 'Users can reset a sort option or filter, by selecting “Select Sort” on the sort dropdown or the blank option on the filter.'
+            },
+
+        ]
+    },
+    
+    {
+        title:'Authorization',
+        link:'https://www.youtube.com/embed/2IiUxkc7mt4',
+        details:  [
+            {
+                subtitle:'Logged In Permissions',
+                description: 'Only logged in users can interact with any posts and non logged in users will be prompted with a message that says they cannot interact with posts.'
+            },
+            {
+                subtitle:'Non Logged Unpermitted Activities',
+                description: 'Non-logged in users cannot create, update up/downvote or delete posts.'
+            },
+            {
+                subtitle:'Edit and Delete Permissions',
+                description: 'In addition only users can edit or delete their own post, so questions and replies can only be edited/deleted by the original question author.'
+            },
+
+        ]
+    },
+
+
+    {
+        title:'Questions and Replies',
+        link:'https://www.youtube.com/embed/p2Y2mCPzDYg',
+        details:  [
+            {
+                subtitle:'CRUD',
+                description: 'Questions and replies both support full create, read, update and delete functionality.'
+            },
+            {
+                subtitle:'Upvoting and Downvoting',
+                description: 'Questions and replies can be upvoted and downvoted.'
+            },
+            {
+                subtitle:'Form Validation',
+                description: 'The question and reply creation/edit forms both fully support inline validation.'
+            },
+            {
+                subtitle:'Dynamic Input Creation and Deletion',
+                description: 'Users can create or delete as many inputs as they want on a question or reply form.'
+            },
+
+        ]
+    },
+
+
+     {
+        title:'Questions and Replies',
+        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
+        details:  [
+            {
+                subtitle:'CRUD',
+                description: 'Questions and replies both support full create, read, update and delete functionality.'
+            },
+            {
+                subtitle:'Upvoting and Downvoting',
+                description: 'Questions and replies can be upvoted and downvoted.'
+            },
+            {
+                subtitle:'Form Validation',
+                description: 'The question and reply creation/edit forms both fully support inline validation.'
+            },
+            {
+                subtitle:'Dynamic Input Creation and Deletion',
+                description: 'Users can create or delete as many inputs as they want on a question or reply form.'
+            },
+
+        ]
+    },
+
+    {
+        title:'Answered Question',
+        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
+        details:  [
+            {
+                subtitle:'Best Solution Button',
+                description: 'Marks the best solution for a question amd can be toggled on or off. App make sures that there can only be one best solution.'
+            },
+            {
+                subtitle:'Dynamic Rendering',
+                description: 'Solved questions have a message at the top that tells the user that the solution is in replies and will also be marked “(Solved”) in the title. The question header will also turn green if it is marked solved.'
+            },
+            
+        ]
+    }
+
+     
+     
+]
 
 export const animationValues = (currentVisible,  id)  =>  currentVisible ===  id ? 'animate-fadeIn': 'animate-fadeOut';

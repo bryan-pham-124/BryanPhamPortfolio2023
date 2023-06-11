@@ -1,42 +1,56 @@
 import React from 'react'
+ 
+import H2 from '../text/H2'
+import Demo from './Demo'
+import { features } from '../../data'
+import { useMediaQuery } from 'react-responsive';
+import H4 from '../text/H4';
+import ProjectsHeader from './ProjectHeader';
+import BigP from '../text/BigP';
+import MediumSubtitle from '../text/MediumSubtitle';
 
-
-
-const features = [
-    {
-        title: 'Demo - Registering Login and Logout',
-        details:  [
-            {
-                subtitle:'Dynamic inline form validation',
-                description: 'Users can only submit a form once all fields are valid'
-            },
-            {
-                subtitle:'Register',
-                description: 'Allows if a user to register with an email that is not in the database and notifies the user when the email they try to register with has been taken.'
-            },
-            {
-                subtitle:'Logout',
-                description: 'Logs user out if they are logged in.'
-            },
-            {
-                subtitle:'Dynamic inline form validation',
-                description: 'Allows users to login if they provide valid credentials and tells users if they do not have any valid credentials'
-            },
-
-        ]
-    },
-     
-]
 
 const DeveloperHelpsSuiteDemos = () => {
-  return (
-     <section>
-        <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="wrapper">
 
-            </div>
-        </div>
-     </section>
+  const isMobile = useMediaQuery({ query: `(max-width: 49rem)` });
+
+
+  return (
+     <>
+        
+        <H2 textAlign='center' text="Demos"/>
+
+        {
+            features.map(feature => (
+                <section className="grid grid-cols-1 md:grid-cols-2 h-full md:h-[100vh] items-center justify-items-center my-12 px-5">
+                    <div className="wrapper px-9">
+                        <MediumSubtitle text={feature.title} />
+                        <Demo details={feature.details} />
+                    </div>
+                     
+                    { 
+                        
+                        isMobile 
+                        
+                        ? 
+            
+                              <H4  textAlign="center" text={ `Embed vidoes not work well on mobile please go here:  ${feature.link}` } /> 
+                                          
+                
+                        
+
+                        : 
+                        
+                        <iframe  className='w-full h-full my-5 md:h-full'src={feature.link}></iframe>
+                     
+                     }
+                    
+                   
+                </section>
+            ))
+        }   
+        
+     </>
   )
 }
 

@@ -73,7 +73,7 @@ const MainContent = () => {
      
         />  
 
-        
+
         <Skills
             designSkills={designSkills}
             designTools={designTools}
@@ -83,7 +83,7 @@ const MainContent = () => {
 
 
         <ProjectsHeader/>
-    
+
 
         {
 
@@ -100,11 +100,18 @@ const MainContent = () => {
                   
             />
 
-          ))
+            ))
         }
-    
-    
+
+
         <Footer  />
+
+
+
+      
+
+  
+       
        
     </>
   );
