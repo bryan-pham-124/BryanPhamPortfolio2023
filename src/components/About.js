@@ -15,7 +15,7 @@ const About = forwardRef(({header, description, currentVisible}, ref) => {
      <section 
             ref = {ref} 
             id="about" 
-            className={`opacity-0 flex justify-center bg-white py-10  h-[90vh] lg:h-[100vh] flex items-center  
+            className={`opacity-0 flex justify-center bg-white py-10  h-[90vh] lg:h-[100vh]  items-center  
             ${animationValues(currentVisible, 'about')} `}
          >
         <div className="wrapper w-[50vw]">

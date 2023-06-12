@@ -200,7 +200,7 @@ export const projectDetails = [
 export const features = [
     {
         title: 'Registering Login and Logout',
-        link: 'https://www.youtube.com/embed/XX7pgBHJkMQ',
+        link: '/videos/LoginRegister.mp4',
         details:  [
             {
                 subtitle:'Dynamic inline form validation.',
@@ -224,7 +224,7 @@ export const features = [
 
     {
         title:'Filtering and Sorting',
-        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
+        link:'/videos/FilterSort.mp4',
         details:  [
             {
                 subtitle:'Sorting',
@@ -244,7 +244,7 @@ export const features = [
     
     {
         title:'Authorization',
-        link:'https://www.youtube.com/embed/2IiUxkc7mt4',
+        link:'/videos/Authorization.mp4',
         details:  [
             {
                 subtitle:'Logged In Permissions',
@@ -265,7 +265,7 @@ export const features = [
 
     {
         title:'Questions and Replies',
-        link:'https://www.youtube.com/embed/p2Y2mCPzDYg',
+        link:'/videos/QuestionsAndReplies.mp4',
         details:  [
             {
                 subtitle:'CRUD',
@@ -287,34 +287,11 @@ export const features = [
         ]
     },
 
-
-     {
-        title:'Questions and Replies',
-        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
-        details:  [
-            {
-                subtitle:'CRUD',
-                description: 'Questions and replies both support full create, read, update and delete functionality.'
-            },
-            {
-                subtitle:'Upvoting and Downvoting',
-                description: 'Questions and replies can be upvoted and downvoted.'
-            },
-            {
-                subtitle:'Form Validation',
-                description: 'The question and reply creation/edit forms both fully support inline validation.'
-            },
-            {
-                subtitle:'Dynamic Input Creation and Deletion',
-                description: 'Users can create or delete as many inputs as they want on a question or reply form.'
-            },
-
-        ]
-    },
+ 
 
     {
         title:'Answered Question',
-        link:'https://www.youtube.com/embed/W3P-W4mSWtk',
+        link:'/videos/SolutionButton.mp4',
         details:  [
             {
                 subtitle:'Best Solution Button',

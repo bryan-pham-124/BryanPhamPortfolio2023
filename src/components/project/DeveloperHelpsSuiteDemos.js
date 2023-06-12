@@ -4,10 +4,8 @@ import H2 from '../text/H2'
 import Demo from './Demo'
 import { features } from '../../data'
 import { useMediaQuery } from 'react-responsive';
-import H4 from '../text/H4';
-import ProjectsHeader from './ProjectHeader';
-import BigP from '../text/BigP';
 import MediumSubtitle from '../text/MediumSubtitle';
+import H3 from '../text/H3';
 
 
 const DeveloperHelpsSuiteDemos = () => {
@@ -19,33 +17,23 @@ const DeveloperHelpsSuiteDemos = () => {
      <>
         
         <H2 textAlign='center' text="Demos"/>
+        <H3 textAlign='center' text={'Fullscreen is available on video controls'}/>
 
         {
             features.map(feature => (
-                <section className="grid grid-cols-1 md:grid-cols-2 h-full md:h-[100vh] items-center justify-items-center my-12 px-5">
+                <section className="grid grid-cols-1 lg:grid-cols-2 h-full items-center  px-12 my-14">
+
                     <div className="wrapper px-9">
                         <MediumSubtitle text={feature.title} />
                         <Demo details={feature.details} />
                     </div>
                      
-                    { 
-                        
-                        isMobile 
-                        
-                        ? 
-            
-                              <H4  textAlign="center" text={ `Embed vidoes not work well on mobile please go here:  ${feature.link}` } /> 
-                                          
-                
-                        
-
-                        : 
-                        
-                        <iframe  className='w-full h-full my-5 md:h-full'src={feature.link}></iframe>
-                     
-                     }
+                    <div className="wrapper flex justify-center">
+                        <video className='w-9/12 h-auto' controls>
+                            <source src={feature.link} type="video/mp4"/>
+                        </video>
+                    </div>
                     
-                   
                 </section>
             ))
         }   
