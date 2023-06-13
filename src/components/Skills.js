@@ -1,19 +1,19 @@
 import { faCode, faPen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import H3 from './text/H3'
+ import H3 from './text/H3'
 import H2 from './text/H2'
+import H4 from './text/H4'
 import HR from './HR'
-import P from './text/P'
+
 
 
 const designTextColor = 'white';
 const frontEndColor = "white"
 
-
-const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
+const Skills = ({designSkills, designTools, techSkills, techTools}) => {
   return (
-    <section  id="skills"  className={`wrapper bg-white flex justify-center items-center `}>
+    <section className='wrapper bg-white flex justify-center items-center'>
 
         <div className="wrapper flex flex-col  justify-center w-full md:flex-row md:w-full">
              
@@ -22,7 +22,7 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                 <div className='wrapper w-full text-custom'>
 
                     <FontAwesomeIcon className='text-7xl mb-6 text-customGreen  bg-white py-7 px-10' icon={faPen}/>
-                    <H2 textAlign='center' text = {'Design'}  color={designTextColor} />
+                    <H2 textAlign='center' text = {'Design'} marginY={'6'} color={designTextColor} />
                     <HR color ='white'/>
 
                 </div>
@@ -31,11 +31,11 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
 
                     <div className='wrapper border-white'>
                         <H3 textAlign='center' text={'Skills'}   color={designTextColor} />
-                        <div className="wrapper flex  justify-center">
+                        <div className="wrapper flex justify-center">
                             <ul>
                                 {
-                                    designSkills.map((skill, i ) => (
-                                            <li key ={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={skill}/> </li>
+                                    designSkills.map(skill => (
+                                            <li className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={skill}/> </li>
                                     ))
                                 }
                             </ul>
@@ -47,8 +47,8 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                         <div className="wrapper flex  justify-center">
                             <ul>
                                 {
-                                    designTools.map((tool, i ) => (
-                                            <li key ={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={tool}/> </li>
+                                    designTools.map(tool => (
+                                            <li className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={tool}/> </li>
                                     ))
                                 }
                             </ul>
@@ -59,7 +59,6 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                 
             </div>
 
-                                
             <div className="wrapper bg-customBlack py-12 px-9 w-full min-w-[17rem]">
 
                 <div className='wrapper'>
@@ -75,8 +74,8 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                         <div className="wrapper flex  justify-center">
                             <ul>
                                 {
-                                    techSkills.map((skill, i) => (
-                                            <li key={i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={skill}/> </li>
+                                    techSkills.map(skill => (
+                                            <li className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={skill}/> </li>
                                     ))
                                 }
                             </ul>
@@ -88,14 +87,15 @@ const Skills =  ({designSkills, designTools, techSkills, techTools} ) => {
                         <div className="wrapper flex  justify-center">
                             <ul >
                                 {
-                                    techTools.map((tool, i) => (
-                                            <li key = {i} className={`text-${designTextColor}`}><P color='white' textAlign='center' text={tool}/> </li>
+                                    techTools.map(tool => (
+                                            <li className={`text-${designTextColor}`}><H4 color='white' textAlign='center' text={tool}/> </li>
                                     ))
                                 }
                             </ul>
                         </div>
                     </div>
                 </div>
+
 
             </div>
             

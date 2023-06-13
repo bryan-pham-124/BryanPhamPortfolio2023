@@ -27,7 +27,7 @@ const ProjectDetails = () => {
 
   return (
 
-    <section className='opacity-0 text-black text-4xl  py-5 animate-fadeIn'>
+    <section className='opacity-0 text-black text-4xl  py-14 animate-fadeIn'>
 
         <div className="wrapper mb-14">
             <Link to="/" className='px-5 py-4 bg-customGreen text-white'> Home </Link>
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
             </div>
            
 
-            <section className='w-full flex flex-col gap-x-8 gap-y-3 justify-items-start sm:justify-items-center grid grid-cols-1 sm:grid-cols-3'>
+            <section className='w-full gap-x-8 gap-y-3 justify-items-center grid grid-cols-1 sm:grid-cols-3'>
 
                 {
                  projectDetail.details.map(elm => (
