@@ -1,5 +1,6 @@
 {
-  "name": "portfolio2023",
+  "homepage": "https://bryan-pham-124.github.io/bryanphamportfolio2023/",
+  "name": "bryanphamportfolio2023",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.1.0",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   }
