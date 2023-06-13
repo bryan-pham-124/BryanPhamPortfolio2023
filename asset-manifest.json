@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/BryanpPhamPortfolio/static/css/main.e4c217b2.css",
-    "main.js": "/BryanpPhamPortfolio/static/js/main.0601916e.js",
-    "static/js/787.ef0c4325.chunk.js": "/BryanpPhamPortfolio/static/js/787.ef0c4325.chunk.js",
-    "static/media/logo.svg": "/BryanpPhamPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/BryanpPhamPortfolio/index.html",
-    "main.e4c217b2.css.map": "/BryanpPhamPortfolio/static/css/main.e4c217b2.css.map",
-    "main.0601916e.js.map": "/BryanpPhamPortfolio/static/js/main.0601916e.js.map",
-    "787.ef0c4325.chunk.js.map": "/BryanpPhamPortfolio/static/js/787.ef0c4325.chunk.js.map"
+    "main.css": "/BryanpPhamPortfolio2023/static/css/main.e4c217b2.css",
+    "main.js": "/BryanpPhamPortfolio2023/static/js/main.f1813cd0.js",
+    "static/js/787.ef0c4325.chunk.js": "/BryanpPhamPortfolio2023/static/js/787.ef0c4325.chunk.js",
+    "static/media/logo.svg": "/BryanpPhamPortfolio2023/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/BryanpPhamPortfolio2023/index.html",
+    "main.e4c217b2.css.map": "/BryanpPhamPortfolio2023/static/css/main.e4c217b2.css.map",
+    "main.f1813cd0.js.map": "/BryanpPhamPortfolio2023/static/js/main.f1813cd0.js.map",
+    "787.ef0c4325.chunk.js.map": "/BryanpPhamPortfolio2023/static/js/787.ef0c4325.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4c217b2.css",
-    "static/js/main.0601916e.js"
+    "static/js/main.f1813cd0.js"
   ]
 }
