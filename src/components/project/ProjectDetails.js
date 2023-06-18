@@ -40,7 +40,7 @@ const ProjectDetails = () => {
         <div className="h-full w-full  flex flex-col items-center px-14 ">
  
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-x-9">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-x-9 my-10">
 
                 <figure className="wrapper flex justify-center my-4 border border-customBlack">
                     <img src={`../${projectDetail.screenshotLink}`} alt ="Project Img" className='h-auto' />
